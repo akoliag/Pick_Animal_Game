@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html {
+    background: -moz-linear-gradient(bottom right, #6edb60, #23a392);
+    background: linear-gradient(to bottom right, #97C497, #23a392);
+}
+
+h1 {
+    font-family: "Comic Sans MS", Times, serif;
+    font-size: 50px;
+    color: #17695D;
+    text-align: center;
+    text-shadow: 5px 5px 8px #23a392;
+    font-weight: bold;
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+table {
+    border: 15px solid #17695D;
+    margin: 40px; 
+    text-align: center;
+    padding: 30px;
+    width: 40%;
+    box-shadow: 10px 10px 5px #092B26;
+}
+
+table , tr, td {
+    border: 8px solid #17695D;
+    border-radius: 4px;
+}
+
+
+/*Sprite positions*/
+
+.sheep,
+.cat,
+.dog,
+.camel,
+.crocodile,
+.polar_bear,
+.cow,
+.horse,
+.pig,
+.elephant,
+.bear,
+.giraffe,
+.goose,
+.cock,
+.hen,
+.fox,
+.wolf,
+.elk {
+    background-image: url(images/animal_sprite.png);
+    height: 135px;
+    width: 135px;
+    background-repeat: no-repeat;
+}
+
+.sheep {
+    background-position: 0 0;
+}
+
+.cat {
+    background-position: -135px 0;
+}
+
+.dog {
+    background-position: -270px 0;
+}
+
+.camel {
+    background-position: -403px 0;
+}
+
+.crocodile {
+    background-position: -540px 0;
+}
+
+.polar_bear {
+    background-position: -673px 0;
+}
+
+.cow {
+    background-position: 0 -135px;
+}
+
+.horse {
+    background-position: -135px -135px;
+}
+
+.pig {
+    background-position: -270px -135px;
+}
+
+.elephant {
+    background-position: -403px -135px;
+}
+
+.bear {
+    background-position: -540px -135px;
+}
+
+.giraffe {
+    background-position: -673px -135px;
+}
+
+.goose {
+    background-position: 0 -275px;
+}
+
+.cock {
+    background-position: -135px -275px;
+}
+
+.hen {
+    background-position: -270px -275px;
+}
+
+.fox {
+    background-position: -403px -275px;
+}
+
+.wolf {
+    background-position: -540px -275px;
+}
+
+.elk {
+    background-position: -673px -275px;
+}
+
+
+/*table layout*/
+
+#animal_table {
+    background-color: #146d60;
+    margin: auto;
+    
+}
+
+#animal_to_be_guessed {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: "Comic Sans MS", Times, serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    width: 80%;
+    text-transform: uppercase;
+    padding: 40px 40px;
+    color: #005059;
+    text-shadow: 4px 4px 8px rgba(20, 131, 116, 0.95);
+}
+
+.play_again {
+    text-align: center;
+    margin: 90px;
+}
+
+.button {
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 200px;
+    border-radius: 6px;
+    background-color: #146d60;
+    border: 2px solid #1c4938;
+    box-sizing: border-box;
+    transition: box-shadow 200ms ease-out;
+    font-family: "Comic Sans MS", Times, serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #73af1f;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #28ba39;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#footer_text {
+    font-family: "Comic Sans MS", Times, serif;
+    font-size: 14px;
+    color: #17695D;
+    text-align: center;
+    text-shadow: 5px 5px 8px #23a392;
+    font-weight: bold;
+    margin: auto;
+}
