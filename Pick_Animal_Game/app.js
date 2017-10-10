@@ -37,9 +37,7 @@ function animalToBeGuessed(indexes) {
         .innerHTML = animalCollection[indexes[randomIndex]].animalName;
 }
 
-function playAgain() {
 
-}
 function getRandomIndex(){
     return Math.floor(Math.random() * (animalCollection.length));
 }
@@ -64,5 +62,10 @@ function renderAnimalsTable() {
     console.log(randomIndex);
     document.getElementById('animal_table').innerHTML = table;
     return randomIndex;
+}
+
+function playAgain(){
+    let indexes = renderAnimalsTable();
+    animalToBeGuessed(indexes);
 }
 

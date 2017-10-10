@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="public/reset.css">
     <link rel="stylesheet" href="public/styles.css">
 </head>
-<body onload=" animalToBeGuessed();">
+<body onload="animalToBeGuessed(indexes)">
     <div class="container">
         <div class="title">
             <h1>Wybierz zwierzaka!</h1>
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="play_again">
-            <a class="button" onclick="playAgain()">Nowa gra</a>
+            <button class="button" onclick="playAgain()">Nowa gra</button>
         </div>
     </div>
     <script type='text/javascript' src="app.js"></script>
