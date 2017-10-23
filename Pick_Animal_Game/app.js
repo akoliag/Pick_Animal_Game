@@ -3,6 +3,67 @@ function Animal(animalName, animalClass) {
     this.animalClass = animalClass;
 }
 
+function checkAnswer(selectedElement) {
+    console.log(selectedElement.innerHTML);
+    let after = document.getElementById("after");
+    if (selectedElement.target.className === animalClassToBeGuessed) {
+        after.innerHTML = "Dobra robota! Naciśnij przycisk Nowa gra aby zagrać ponownie."
+    } else {
+        after.innerHTML = " Upss coś poszło nie tak. Spróbuj ponownie!"
+    }
+    selectedElement.stopPropagation();
+}
+
+function playAgain() {
+    let indexes = renderAnimalsTable();
+    animalToBeGuessed(indexes);
+}
+
+function animalToBeGuessed(indexes) {
+    let animalIndexToBeGuessed = Math.floor(Math.random() * (indexes.length));
+    let animal = animalCollection[indexes[animalIndexToBeGuessed]]
+    document
+        .getElementById('animal_to_be_guessed')
+        .innerHTML = animal.animalName;
+
+    return animal.animalClass;
+}
+
+
+function getRandomIndex() {
+    return Math.floor(Math.random() * (animalCollection.length));
+}
+
+function renderAnimalsTable() {
+    let cols = 4;
+    let rows = 1;
+    let table = '';
+    let randomIndex = [];
+    for (let row = 0; row < rows; row++) {
+        table += '<tr>';
+        for (let c = 0; c < cols; c++) {
+            let randomValue = getRandomIndex()
+            while (randomIndex.includes(randomValue)) {
+                randomValue = getRandomIndex()
+            }
+            randomIndex.push(randomValue)
+            let div = "<div class='" + animalCollection[randomValue].animalClass + "'></div>"
+            table += '<td>' + div + '</td>';
+        }
+    }
+    table += '</tr>';
+    console.log(randomIndex);
+    document.getElementById('animal_table').innerHTML = table;
+
+    return randomIndex;
+}
+function bindCheckAnswerEvent(index) {
+    console.log(index);
+    var animalClass = animalCollection[index].animalClass;
+    var animalElement = document.getElementsByClassName(animalClass)[0];
+    animalElement.addEventListener("click", checkAnswer, false);
+}
+
 let sheep = new Animal("owca", "sheep");
 let cat = new Animal("kot", "cat");
 let dog = new Animal("pies", "dog");
@@ -28,44 +89,23 @@ let animalCollection = [sheep, cat, dog, camel, crocodile, polarBear,
 ];
 
 let indexes = renderAnimalsTable();
-animalToBeGuessed(indexes);
-
-function animalToBeGuessed(indexes) {
-    let randomIndex = Math.floor(Math.random() * (indexes.length));
-    document
-        .getElementById('animal_to_be_guessed')
-        .innerHTML = animalCollection[indexes[randomIndex]].animalName;
-}
+const animalClassToBeGuessed = animalToBeGuessed(indexes); //dlaczego tutaj wywołujemy tą funkcję?
 
 
-function getRandomIndex(){
-    return Math.floor(Math.random() * (animalCollection.length));
-}
-function renderAnimalsTable() {
-    let cols = 4;
-    let rows = 1;
-    let table = '';
-    let randomIndex = [];
-    for (let row = 0; row < rows; row++) {
-        table += '<tr>';
-        for (let c = 0; c < cols; c++) {
-            let randomValue = getRandomIndex()
-            while (randomIndex.includes(randomValue)) {
-                randomValue = getRandomIndex()
-            }
-            randomIndex.push(randomValue)
-            let div = "<div class='" + animalCollection[randomValue].animalClass + "'></div>"
-            table += '<td>' + div + '</td>';
-        }
-    }
-    table += '</tr>';
-    console.log(randomIndex);
-    document.getElementById('animal_table').innerHTML = table;
-    return randomIndex;
-}
+indexes.forEach(function (value) {
+    bindCheckAnswerEvent(value);
+});
+// let zeroTableIndex = indexes[0];
 
-function playAgain(){
-    let indexes = renderAnimalsTable();
-    animalToBeGuessed(indexes);
-}
-
+// let firstTableIndex = indexes[1];
+// var animal1 = animalCollection[firstTableIndex].animalClass;
+// var animalOne = document.getElementsByClassName[animal1][1];
+// animalOne.addEventListener("click", checkAnswer, false);
+// let secondTableIndex = indexes[2];
+// var animal2 = animalCollection[secondTableIndex].animalClass;
+// var animalTwo = document.getElementsByClassName[animal2][2];
+// animalTwo.addEventListener("click", checkAnswer, false);
+// let thirdTableIndex = indexes[3];
+// var animal3 = animalCollection[thirdTableIndex].animalClass;
+// var animalSThree = document.getElementsByClassName[animal3][3];
+// animalThree.addEventListener("click", checkAnswer, false);
