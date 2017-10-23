@@ -17,6 +17,8 @@ function checkAnswer(selectedElement) {
 function playAgain() {
     let indexes = renderAnimalsTable();
     animalToBeGuessed(indexes);
+    
+
 }
 
 function animalToBeGuessed(indexes) {
@@ -89,23 +91,9 @@ let animalCollection = [sheep, cat, dog, camel, crocodile, polarBear,
 ];
 
 let indexes = renderAnimalsTable();
-const animalClassToBeGuessed = animalToBeGuessed(indexes); //dlaczego tutaj wywołujemy tą funkcję?
+const animalClassToBeGuessed = animalToBeGuessed(indexes); 
 
 
 indexes.forEach(function (value) {
     bindCheckAnswerEvent(value);
 });
-// let zeroTableIndex = indexes[0];
-
-// let firstTableIndex = indexes[1];
-// var animal1 = animalCollection[firstTableIndex].animalClass;
-// var animalOne = document.getElementsByClassName[animal1][1];
-// animalOne.addEventListener("click", checkAnswer, false);
-// let secondTableIndex = indexes[2];
-// var animal2 = animalCollection[secondTableIndex].animalClass;
-// var animalTwo = document.getElementsByClassName[animal2][2];
-// animalTwo.addEventListener("click", checkAnswer, false);
-// let thirdTableIndex = indexes[3];
-// var animal3 = animalCollection[thirdTableIndex].animalClass;
-// var animalSThree = document.getElementsByClassName[animal3][3];
-// animalThree.addEventListener("click", checkAnswer, false);
