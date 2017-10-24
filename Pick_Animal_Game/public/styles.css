@@ -23,9 +23,9 @@ h1 {
 
 table {
     border: 15px solid #17695D;
-    margin: 40px; 
+    margin: 20px; 
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     width: 40%;
     box-shadow: 10px 10px 5px #092B26;
 }
@@ -145,17 +145,14 @@ table , tr, td {
 
 #animal_to_be_guessed {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 20px 100px 20px 100px;
     font-family: "Comic Sans MS", Times, serif;
     font-size: 25px;
     letter-spacing: 3px;
     font-weight: bold;
     width: 80%;
     text-transform: uppercase;
-    padding: 30px 30px;
+    padding: 25px 25px;
     color: #005059;
     text-shadow: 4px 4px 8px rgba(20, 131, 116, 0.95);
 }
@@ -181,6 +178,7 @@ table , tr, td {
     text-transform: uppercase;
     color: #97C497;
     cursor: pointer;
+    
 }
 
 .button:hover {
@@ -199,7 +197,7 @@ table , tr, td {
 }
 
 
-.after {
+#after {
     font-family: "Comic Sans MS", Times, serif;
     font-size: 20px;
     color: #01373D;
@@ -208,7 +206,5 @@ table , tr, td {
     text-align: center;
     margin-top: 45px;
     margin-bottom: 30px;
-    text-shadow: 4px 4px 8px rgba(20, 131, 116, 0.95);
-
-   
+    text-shadow: 4px 4px 8px rgba(20, 131, 116, 0.95);   
 }

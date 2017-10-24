@@ -16,8 +16,8 @@ function checkAnswer(selectedElement) {
 
 function playAgain() {
     let indexes = renderAnimalsTable();
-    animalToBeGuessed(indexes);
-    
+    const animalClassToBeGuessed = animalToBeGuessed(indexes);  
+   
 
 }
 
