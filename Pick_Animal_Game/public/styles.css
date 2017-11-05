@@ -4,6 +4,9 @@
     border: 0;
 }
 
+html, body {
+    height: 100%;
+}
 html {
     background: -moz-linear-gradient(bottom right, #6edb60, #23a392);
     background: linear-gradient(to bottom right, #97C497, #23a392);
@@ -317,7 +320,3 @@ table , tr, td {
     text-shadow: 4px 4px 8px rgba(20, 131, 116, 0.95);   
 }
 
-
-/*.hide {
-display: none !important;
-}

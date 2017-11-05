@@ -19,10 +19,13 @@ function playAgain() {
     if (after.innerHTML === "Dobra robota! Naciśnij przycisk Nowa gra aby zagrać ponownie." || after.innerHTML === "Upss coś poszło nie tak. Spróbuj ponownie!") {
         document.getElementById('after').innerHTML = "";
     }
-
     let indexes = renderAnimalsTable();
     const animalClassToBeGuessed = animalToBeGuessed(indexes);  
-    
+    let playAgainStep_1 = checkAnswer();
+    let playAgainStep_2 = bindCheckAnswerEvent();
+    indexes.forEach(function (value) {
+        bindCheckAnswerEvent(value);
+    });
 }
 
 function animalToBeGuessed(indexes) {
@@ -63,7 +66,7 @@ function renderAnimalsTable() {
 
     return randomIndex;
 }
-function bindCheckAnswerEvent(index) {
+ function bindCheckAnswerEvent(index) {
     console.log(index);
     var animalClass = animalCollection[index].animalClass;
     var animalElement = document.getElementsByClassName(animalClass)[0];
@@ -101,3 +104,4 @@ const animalClassToBeGuessed = animalToBeGuessed(indexes);
 indexes.forEach(function (value) {
     bindCheckAnswerEvent(value);
 });
+
