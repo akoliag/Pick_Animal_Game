@@ -62,79 +62,187 @@ table , tr, td {
     background-repeat: no-repeat;
 }
 
+
 .sheep {
     background-position: 0 0;
+}
+.sheep:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
 }
 
 .cat {
     background-position: -135px 0;
 }
+.cat:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 
 .dog {
     background-position: -270px 0;
 }
+.dog:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 
 .camel {
     background-position: -403px 0;
+}
+.camel:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
 }
 
 .crocodile {
     background-position: -540px 0;
 }
 
+.crocodile:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 .polar_bear {
     background-position: -673px 0;
 }
 
+.polar_bear:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 .cow {
     background-position: 0 -135px;
 }
 
+.cow:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 .horse {
     background-position: -135px -135px;
 }
 
+.horse:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 .pig {
     background-position: -270px -135px;
 }
 
+.pig:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 .elephant {
     background-position: -403px -135px;
 }
 
+.elephant:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 .bear {
     background-position: -540px -135px;
 }
 
+.bear:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 .giraffe {
     background-position: -673px -135px;
 }
 
+.giraffe:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 .goose {
     background-position: 0 -275px;
 }
 
+.goose:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 .cock {
     background-position: -135px -275px;
+}
+.cock:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
 }
 
 .hen {
     background-position: -270px -275px;
 }
 
+.hen:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 .fox {
     background-position: -403px -275px;
 }
 
+.fox:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 .wolf {
     background-position: -540px -275px;
 }
 
+.wolf:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 .elk {
     background-position: -673px -275px;
 }
 
-
+.elk:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
 /*table layout*/
 
 #animal_table {
@@ -207,4 +315,9 @@ table , tr, td {
     margin-top: 45px;
     margin-bottom: 30px;
     text-shadow: 4px 4px 8px rgba(20, 131, 116, 0.95);   
+}
+
+
+/*.hide {
+display: none !important;
 }

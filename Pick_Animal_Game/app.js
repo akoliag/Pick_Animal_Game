@@ -15,10 +15,11 @@ function checkAnswer(selectedElement) {
 }
 
 function playAgain() {
+    var after = document.getElementById('after');
+    after.classList.add('hide');
     let indexes = renderAnimalsTable();
     const animalClassToBeGuessed = animalToBeGuessed(indexes);  
-   
-
+    
 }
 
 function animalToBeGuessed(indexes) {
