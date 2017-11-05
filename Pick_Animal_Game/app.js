@@ -9,14 +9,17 @@ function checkAnswer(selectedElement) {
     if (selectedElement.target.className === animalClassToBeGuessed) {
         after.innerHTML = "Dobra robota! Naciśnij przycisk Nowa gra aby zagrać ponownie."
     } else {
-        after.innerHTML = " Upss coś poszło nie tak. Spróbuj ponownie!"
+        after.innerHTML = "Upss coś poszło nie tak. Spróbuj ponownie!"
     }
     selectedElement.stopPropagation();
 }
 
 function playAgain() {
-    var after = document.getElementById('after');
-    after.classList.add('hide');
+    let after = document.getElementById('after');
+    if (after.innerHTML === "Dobra robota! Naciśnij przycisk Nowa gra aby zagrać ponownie." || after.innerHTML === "Upss coś poszło nie tak. Spróbuj ponownie!") {
+        document.getElementById('after').innerHTML = "";
+    }
+
     let indexes = renderAnimalsTable();
     const animalClassToBeGuessed = animalToBeGuessed(indexes);  
     
