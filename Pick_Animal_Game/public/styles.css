@@ -7,7 +7,7 @@
 html, body {
     height: 100%;
 }
-html {
+html, body {
     background: -moz-linear-gradient(bottom right, #6edb60, #23a392);
     background: linear-gradient(to bottom right, #97C497, #23a392);
 }
@@ -484,7 +484,7 @@ table , tr, td {
 
 .play_again {
     text-align: center;
-    margin: 50px;
+    margin: 65px;
 }
 
 .button {
