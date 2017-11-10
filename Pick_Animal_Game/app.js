@@ -90,10 +90,29 @@ let hen = new Animal("kura", "hen");
 let fox = new Animal("lis", "fox");
 let wolf = new Animal("wilk", "wolf");
 let elk = new Animal("łoś", "elk");
+let mouse = new Animal("mysz", "mouse");
+let frog = new Animal("żaba", "frog");
+let kangaroo = new Animal("kangur", "kangaroo");
+let dragonfly = new Animal("ważka", "dragonfly");
+let grasshopper = new Animal("konik polny", "grasshopper");
+let doe = new Animal("sarna", "doe");
+let tortoise = new Animal("żółw", "tortoise");
+let bee = new Animal("pszczoła", "bee");
+let ladybird = new Animal("biedronka", "ladybird");
+let caterpillar = new Animal("gąsienica", "caterpillar");
+let monkey = new Animal("małpa", "monkey");
+let rabbit = new Animal("królik", "rabbit");
+let hippo = new Animal("hipopotam", "hippo");
+let fly = new Animal("mucha", "fly");
+let mosquito = new Animal("komar", "mosquito");
+let butterfly = new Animal("motyl", "butterfly");
+
 
 let animalCollection = [sheep, cat, dog, camel, crocodile, polarBear,
     cow, horse, pig, elephant, bear, giraffe, goose, cock, hen, fox,
-    wolf, elk
+    wolf, elk, mouse, frog, kangaroo, dragonfly, grasshopper, doe, tortoise,
+    bee, ladybird, caterpillar, monkey, rabbit, hippo, fly, mosquito,
+    butterfly
 ];
 
 let indexes = renderAnimalsTable();

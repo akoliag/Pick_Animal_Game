@@ -58,8 +58,26 @@ table , tr, td {
 .hen,
 .fox,
 .wolf,
-.elk {
-    background-image: url(images/animal_sprite.png);
+.elk,
+.mouse,
+.frog,
+.kangaroo,
+.ant,
+.dragonfly,
+.grasshopper,
+.owl,
+.doe,
+.tortoise,
+.bee,
+.ladybird,
+.caterpillar, 
+.monkey,
+.rabbit,
+.hippo,
+.fly,
+.mosquito,
+.butterfly {
+    background-image: url(images/big_animal_sprite.png);
     height: 135px;
     width: 135px;
     background-repeat: no-repeat;
@@ -246,6 +264,202 @@ table , tr, td {
     outline-style: solid;
     outline-color: #049481;
 }
+
+.mouse {
+    background-position: 0px -415px;
+}
+
+.mouse:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+
+.frog {
+    background-position: -135px -415px;
+}
+
+.frog:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+.kangaroo {
+    background-position: -270px -415px;
+}
+
+.kangaroo:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+
+.ant {
+    background-position: -403px -415px;
+}
+
+.ant:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+
+.dragonfly {
+    background-position: -540px -415px;
+}
+
+.dragonfly:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+
+.grasshopper {
+    background-position: -673px -415px;
+}
+
+.grasshopper:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+
+.owl {
+    background-position: -0px -555px;
+}
+
+.owl:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+.doe {
+    background-position: -135px -555px;
+}
+
+.doe:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+
+.tortoise {
+    background-position: -270px -555px;
+}
+
+.tortoise:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+
+.bee {
+    background-position: -403px -555px;
+}
+
+.bee:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+.ladybird {
+    background-position: -540px -555px;
+}
+
+.ladybird:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+.caterpillar {
+    background-position: -673px -555px;
+}
+
+.caterpillar:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+
+
+.monkey {
+    background-position: 0px -691px;
+}
+
+.monkey:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+
+.rabbit {
+    background-position: -135px -692px;
+}
+
+.rabbit:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+.hippo {
+    background-position: -270px -691px;
+}
+
+.hippo:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+.fly{
+    background-position: -403px -691px;
+}
+
+.fly:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+
+.mosquito {
+    background-position: -540px -691px;
+}
+
+.mosquito:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+.butterfly {
+    background-position: -673px -691px;
+}
+
+.butterfly:hover {
+    transform: scale(1.1, 1.1);
+    border: 0.6px solid #17695D;
+    outline-style: solid;
+    outline-color: #049481;
+}
+
+
+
+
 /*table layout*/
 
 #animal_table {
