@@ -14,15 +14,19 @@ function checkAnswer(selectedElement) {
     selectedElement.stopPropagation();
 }
 
+function bindCheckAnswerEvent(index) {
+    console.log(index);
+    var animalClass = animalCollection[index].animalClass;
+    var animalElement = document.getElementsByClassName(animalClass)[0];
+    animalElement.addEventListener("click", checkAnswer, false);
+}
+
 function playAgain() {
     let after = document.getElementById('after');
-    if (after.innerHTML === "Dobra robota! Naciśnij przycisk Nowa gra aby zagrać ponownie." || after.innerHTML === "Upss coś poszło nie tak. Spróbuj ponownie!") {
         document.getElementById('after').innerHTML = "";
-    }
+    
     let indexes = renderAnimalsTable();
-    const animalClassToBeGuessed = animalToBeGuessed(indexes);  
-    let playAgainStep_1 = checkAnswer();
-    let playAgainStep_2 = bindCheckAnswerEvent();
+    animalClassToBeGuessed = animalToBeGuessed(indexes);  
     indexes.forEach(function (value) {
         bindCheckAnswerEvent(value);
     });
@@ -66,12 +70,7 @@ function renderAnimalsTable() {
 
     return randomIndex;
 }
- function bindCheckAnswerEvent(index) {
-    console.log(index);
-    var animalClass = animalCollection[index].animalClass;
-    var animalElement = document.getElementsByClassName(animalClass)[0];
-    animalElement.addEventListener("click", checkAnswer, false);
-}
+ 
 
 let sheep = new Animal("owca", "sheep");
 let cat = new Animal("kot", "cat");
@@ -98,7 +97,7 @@ let animalCollection = [sheep, cat, dog, camel, crocodile, polarBear,
 ];
 
 let indexes = renderAnimalsTable();
-const animalClassToBeGuessed = animalToBeGuessed(indexes); 
+let animalClassToBeGuessed = animalToBeGuessed(indexes); 
 
 
 indexes.forEach(function (value) {
