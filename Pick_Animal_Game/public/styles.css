@@ -19,9 +19,9 @@ h1 {
     text-align: center;
     text-shadow: 5px 5px 8px #23a392;
     font-weight: bold;
-    padding: 25px;
+    padding: 15px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 table {
@@ -506,21 +506,21 @@ table , tr, td {
 
 #animal_to_be_guessed {
     text-align: center;
-    margin: 20px 100px 20px 100px;
+    margin: 0px 100px 20px 100px;
     font-family: "Comic Sans MS", Times, serif;
     font-size: 25px;
     letter-spacing: 3px;
     font-weight: bold;
     width: 80%;
     text-transform: uppercase;
-    padding: 25px 25px;
+    padding: 15px 25px;
     color: #005059;
     text-shadow: 4px 4px 8px rgba(20, 131, 116, 0.95);
 }
 
 .play_again {
     text-align: center;
-    margin: 65px;
+    margin: 50px;
 }
 
 .button {
@@ -553,7 +553,7 @@ table , tr, td {
     text-align: center;
     text-shadow: 5px 5px 8px #23a392;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 
@@ -569,3 +569,111 @@ table , tr, td {
     text-shadow: 4px 4px 8px rgba(20, 131, 116, 0.95);   
 }
 
+/*menu site navigation*/
+.site-nav li {
+    list-style: none;
+    text-align: center;
+    margin: 15px 100px 10px 100px;
+    font-family: "Comic Sans MS", Times, serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    width: 80%;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    text-shadow: 4px 4px 8px rgba(20, 131, 116, 0.95);
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #005059;
+}
+.site-nav ul {
+    padding: 15px;
+    margin: auto;
+}
+.navigation {
+    margin: 70px auto 40px auto;
+    
+
+}
+
+/*menu site pictures*/
+#cat-image {
+    border: 6px solid #17695D;
+    transform: rotate(-20deg);
+    position: relative;
+    top: -350px;
+    right: -30px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+#cock-image {
+    border: 6px solid #17695D;
+    transform: rotate(18deg);
+    float: right;
+    position: relative;
+    top: -380px;
+    right: 30px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#dog-image {
+    border: 6px solid #17695D;
+    transform: rotate(-18deg);
+    float: right;
+    margin-right: 30px;
+    position: relative;
+    top: -300px;
+    right: 60px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#rabbit-image {
+    border: 6px solid #17695D;
+    transform: rotate(10deg);
+    float: right;
+    position: relative;
+    top: -150px;
+    right: -390px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    
+}
+#bee-image {
+    border: 6px solid #17695D;
+    transform: rotate(-15deg);
+    float: right;
+    position: relative;
+    top: -90px;
+    right:-60px;
+    
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#kangaroo-image {
+    border: 6px solid #17695D;
+    transform: rotate(22deg);
+    position: relative;
+    top: -20px;
+    left: -70px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#grasshopper-image {
+    border: 6px solid #17695D;
+    transform: rotate(-12deg);
+    position: relative;
+    top: -100px;
+    left: -60px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#tortoise-image {
+    border: 6px solid #17695D;
+    transform: rotate(-35deg);
+    position: relative;
+    top: -270px;
+    left: -250px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*home icon*/
+#home-icon {
+    position: relative;
+    top: -130px;
+}
