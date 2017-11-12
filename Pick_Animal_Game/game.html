@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Let's play with animals!</title>
+    <link rel="stylesheet" href="./public/reset.css">
+    <link rel="stylesheet" href="./public/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Wybierz zwierzaka!</h1>
+            <a href="./index.html">
+                <img id="home-icon" src="public/images/home.png" alt="home icon" width="60px" height="60px">
+            </a>
+        </div>
+        <div class="animal_options">
+            <div class="animal_to_be_picked">
+                <div id="animal_to_be_guessed" align="center" ;></div>
+                <table id="animal_table" onclick="checkAnswer(this)">
+                </table>
+            </div>
+        </div>
+        <div class="after hide" id="after">
+        </div>
+        <div class="play_again">
+            <button class="button" onclick="playAgain(this)">Nowa gra</button>
+        </div>
+    </div>
+    <script type='text/javascript' src="app.js"></script>
+</body>
+<footer>
+    <p id="footer_text">&copy; ByAga 2017 </p>
+</footer>
+
+</html>

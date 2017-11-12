@@ -7,7 +7,8 @@ function checkAnswer(selectedElement) {
     console.log(selectedElement.innerHTML);
     let after = document.getElementById("after");
     if (selectedElement.target.className === animalClassToBeGuessed) {
-        after.innerHTML = "Dobra robota! Naciśnij przycisk Nowa gra aby zagrać ponownie."
+        after.innerHTML = "Dobra robota!"
+        setTimeout(playAgain, 2000);
     } else {
         after.innerHTML = "Upss coś poszło nie tak. Spróbuj ponownie!"
     }
@@ -23,10 +24,10 @@ function bindCheckAnswerEvent(index) {
 
 function playAgain() {
     let after = document.getElementById('after');
-        document.getElementById('after').innerHTML = "";
-    
+    document.getElementById('after').innerHTML = "";
+
     let indexes = renderAnimalsTable();
-    animalClassToBeGuessed = animalToBeGuessed(indexes);  
+    animalClassToBeGuessed = animalToBeGuessed(indexes);
     indexes.forEach(function (value) {
         bindCheckAnswerEvent(value);
     });
@@ -70,7 +71,7 @@ function renderAnimalsTable() {
 
     return randomIndex;
 }
- 
+
 
 let sheep = new Animal("owca", "sheep");
 let cat = new Animal("kot", "cat");
@@ -116,10 +117,21 @@ let animalCollection = [sheep, cat, dog, camel, crocodile, polarBear,
 ];
 
 let indexes = renderAnimalsTable();
-let animalClassToBeGuessed = animalToBeGuessed(indexes); 
+let animalClassToBeGuessed = animalToBeGuessed(indexes);
 
 
 indexes.forEach(function (value) {
     bindCheckAnswerEvent(value);
 });
+var level = getParameterByName('level');
 
+console.log(level);
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}

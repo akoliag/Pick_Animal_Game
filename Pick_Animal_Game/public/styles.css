@@ -77,7 +77,7 @@ table , tr, td {
 .fly,
 .mosquito,
 .butterfly {
-    background-image: url(images/big_animal_sprite.png);
+    background-image: url(images/sprite.png);
     height: 135px;
     width: 135px;
     background-repeat: no-repeat;
@@ -87,7 +87,12 @@ table , tr, td {
 .sheep {
     background-position: 0 0;
 }
-.sheep:hover {
+.sheep:hover, .cat:hover,.dog:hover, .camel:hover,.crocodile:hover, .polar_bear:hover, .cow:hover, .horse:hover,
+.pig:hover, .elephant:hover, .bear:hover, .giraffe:hover, .goose:hover, .cock:hover, .hen:hover, .fox:hover, .wolf:hover, .bear:hover,
+.giraffe:hover, .goose:hover, .cock:hover, .hen:hover, .fox:hover, .wolf:hover, .elk:hover, .mouse:hover, .frog:hover,
+.kangaroo:hover, .ant:hover, .dragonfly:hover, .grasshopper:hover, .owl:hover, .doe:hover, .tortoise:hover,
+.bee:hover, .ladybird:hover, .caterpillar:hover, .monkey:hover, .rabbit:hover, .hippo:hover,
+.fly:hover, .mosquito:hover, .butterfly:hover  {
     transform: scale(1.1, 1.1);
     border: 0.8px dotted #17695D;
     outline-style: dotted;
@@ -98,403 +103,143 @@ table , tr, td {
 .cat {
     background-position: -135px 0;
 }
-.cat:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
+ 
 
 .dog {
     background-position: -270px 0;
 }
-.dog:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
-
+ 
 .camel {
     background-position: -403px 0;
 }
-.camel:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
-
+ 
 .crocodile {
     background-position: -540px 0;
 }
-
-.crocodile:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
+ 
 .polar_bear {
     background-position: -673px 0;
 }
 
-.polar_bear:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .cow {
     background-position: 0 -135px;
 }
 
-.cow:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .horse {
     background-position: -135px -135px;
 }
 
-.horse:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .pig {
     background-position: -270px -135px;
 }
 
-.pig:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .elephant {
     background-position: -403px -135px;
 }
 
-.elephant:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .bear {
     background-position: -540px -135px;
 }
 
-.bear:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .giraffe {
     background-position: -673px -135px;
 }
 
-.giraffe:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .goose {
     background-position: 0 -275px;
 }
 
-.goose:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .cock {
     background-position: -135px -275px;
-}
-.cock:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
 }
 
 .hen {
     background-position: -270px -275px;
 }
 
-.hen:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .fox {
     background-position: -403px -275px;
 }
 
-.fox:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .wolf {
     background-position: -540px -275px;
 }
 
-.wolf:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .elk {
     background-position: -673px -275px;
-}
-
-.elk:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
 }
 
 .mouse {
     background-position: 0px -415px;
 }
 
-.mouse:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
-
 .frog {
     background-position: -135px -415px;
 }
 
-.frog:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .kangaroo {
     background-position: -270px -415px;
-}
-
-.kangaroo:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
 }
 
 .ant {
     background-position: -403px -415px;
 }
 
-.ant:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
-
 .dragonfly {
     background-position: -540px -415px;
-}
-
-.dragonfly:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
 }
 
 .grasshopper {
     background-position: -673px -415px;
 }
 
-.grasshopper:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
-
 .owl {
     background-position: -0px -555px;
 }
 
-.owl:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .doe {
     background-position: -135px -555px;
-}
-
-.doe:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
 }
 
 .tortoise {
     background-position: -270px -555px;
 }
 
-.tortoise:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
-
 .bee {
     background-position: -403px -555px;
 }
 
-.bee:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .ladybird {
     background-position: -540px -555px;
 }
 
-.ladybird:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .caterpillar {
     background-position: -673px -555px;
 }
 
-.caterpillar:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
-
-
 .monkey {
     background-position: 0px -691px;
-}
-
-.monkey:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
 }
 
 .rabbit {
     background-position: -135px -692px;
 }
 
-.rabbit:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .hippo {
     background-position: -270px -691px;
 }
-
-.hippo:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
+ 
 .fly{
     background-position: -403px -691px;
-}
-
-.fly:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
 }
 
 .mosquito {
     background-position: -540px -691px;
 }
 
-.mosquito:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
 .butterfly {
     background-position: -673px -691px;
 }
-
-.butterfly:hover {
-    transform: scale(1.1, 1.1);
-    border: 0.8px dotted #17695D;
-    outline-style: dotted;
-    outline-color: #17695D;
-    opacity: 0.9;
-}
-
-
-
 
 /*table layout*/
 
@@ -675,5 +420,5 @@ table , tr, td {
 /*home icon*/
 #home-icon {
     position: relative;
-    top: -130px;
+    top: -150px;
 }

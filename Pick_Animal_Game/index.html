@@ -2,37 +2,49 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Let's play with animals!</title>
-    <link rel="stylesheet" href="public/reset.css">
-    <link rel="stylesheet" href="public/styles.css">
+    <meta charset="uft-8">
+    <title>Let's play with animals</title>
+    <link rel="stylesheet" href="./public/reset.css">
+    <link rel="stylesheet" href="./public/styles.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="title">
-            <h1>Wybierz zwierzaka!</h1>
-            <a href="MENU/index.html">
-             <img id="home-icon" src="public/images/home.png" alt="home icon" width="60px" height="60px">
-            </a>
+        <h1>Wybierz zwierzaka!</h1>
+        <div class "navigation">
+            <nav class="site-nav">
+                <ul>
+                    <li>
+                        <a href="./game.html?level=1">Poziom bardzo łatwy</a>
+                    </li>
+                    <li>
+                        <a href="./game.html?level=2">Poziom łatwy</a>
+                    </li>
+                    <li>
+                        <a href="./game.html?level=3">Poziom średni</a>
+                    </li>
+                    <li>
+                        <a href="./game.html?level=4">Poziom trudny</a>
+                    </li>
+                    <li>
+                        <a href="./game.html?level=5">Poziom bardzo trudny</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="animal_options">
-            <div class="animal_to_be_picked">
-                <div id="animal_to_be_guessed" align="center" ;></div>
-                <table id="animal_table" onclick="checkAnswer(this)">
-                </table>
-            </div>
-        </div>
-        <div class="after hide" id="after">
-        </div>
-        <div class="play_again">
-            <button class="button" onclick="playAgain(this)">Nowa gra</button>
-        </div>
+        <img id="cat-image" src="public/images/cat.png" alt="little cat" width="135px" height="135px">
+        <img id="cock-image" src="public/images/cock.png" alt="colourful cock" width="135px" height="135px">
+        <img id="dog-image" src="public/images/dog.png" alt="dog" width="135px" height="135px">
+        <img id="kangaroo-image" src="public/images/kangaroo.png" alt="kangaroo" width="135px" height="135px">
+        <img id="grasshopper-image" src="public/images/grasshopper.png" alt="grasshopper playing fiddle" width="135px" height="135px">
+        <img id="tortoise-image" src="public/images/tortoise.png" alt="tortoise" width="135px" height="135px">
+        <img id="bee-image" src="public/images/bee.png" alt="bee" width="135px" height="135px">
+        <img id="rabbit-image" src="public/images/rabbit.png" alt="rabbit" width="135px" height="135px">
     </div>
-    <script type='text/javascript' src="app.js"></script>
+    <footer>
+        <p id="footer_text">&copy; ByAga 2017 </p>
+    </footer>
 </body>
-<footer>
-    <p id="footer_text">&copy; ByAga 2017 </p>
-</footer>
+
 
 </html>
