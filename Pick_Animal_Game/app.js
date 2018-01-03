@@ -65,13 +65,13 @@ function renderAnimalsTable() {
             table += '<td>' + div + '</td>';
         }
     }
+    
     table += '</tr>';
     console.log(randomIndex);
     document.getElementById('animal_table').innerHTML = table;
 
     return randomIndex;
 }
-
 
 let sheep = new Animal("owca", "sheep");
 let cat = new Animal("kot", "cat");
@@ -108,7 +108,6 @@ let fly = new Animal("mucha", "fly");
 let mosquito = new Animal("komar", "mosquito");
 let butterfly = new Animal("motyl", "butterfly");
 
-
 let animalCollection = [sheep, cat, dog, camel, crocodile, polarBear,
     cow, horse, pig, elephant, bear, giraffe, goose, cock, hen, fox,
     wolf, elk, mouse, frog, kangaroo, dragonfly, grasshopper, doe, tortoise,
@@ -119,17 +118,16 @@ let animalCollection = [sheep, cat, dog, camel, crocodile, polarBear,
 let indexes = renderAnimalsTable();
 let animalClassToBeGuessed = animalToBeGuessed(indexes);
 
-
 indexes.forEach(function (value) {
     bindCheckAnswerEvent(value);
 });
-var level = getParameterByName('level');
+let level = getParameterByName('level');
 
 console.log(level);
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+    let regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
         results = regex.exec(url);
     if (!results) return null;
     if (!results[2]) return '';
